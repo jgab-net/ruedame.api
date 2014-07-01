@@ -13,7 +13,7 @@ class UsersController extends BaseController {
         $validator = Validator::make(
             Input::all(),
             array(
-                'email' => 'required|email',
+                'email' => 'required|email|unique:users',
                 'name' => 'required',
                 'phone' => 'required'
             )
