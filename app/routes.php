@@ -16,4 +16,7 @@ Route::get('/', function()
 	return View::make('landing');
 });
 
-Route::controller('users','UsersController');
+
+Route::group(array('prefix'=>'api'), function(){
+    Route::controller('users','UsersController');
+});

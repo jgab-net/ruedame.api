@@ -235,7 +235,7 @@
                                 </a>
                             </div>
                             <div class="col-md-5 col-md-offset-1">
-                                <button class="modal-button" id="registration" data-url="{{ URL::to('users') }}">
+                                <button class="modal-button" id="registration" data-url="{{ URL::to('api/users') }}">
                                     <p class="modal-text">
                                         REGÍSTRATE
                                     </p>
