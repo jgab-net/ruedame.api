@@ -88,7 +88,7 @@ return array(
 			'rule-name' => 'custom-message',
 		),
         'email' => array(
-            'unique' => 'El Correo Electronico ya se encuentra registrador'
+            'unique' => 'El Correo Electronico ya se encuentra registrado'
         )
 	),
 
