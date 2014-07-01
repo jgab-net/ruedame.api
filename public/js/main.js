@@ -41,11 +41,11 @@ $(function(){
                 $('#mail').val('');
                 $('#phone').val('');
 
-                new PNotify({
-                    text: data.code,
-                    delay: 4000
-                });
-                $('#modal-registro').modal('hide');
+                setTimeout(function(){
+                    document.getElementById("modal-form").innerHTML = "<div class='row'> <p id='modal-pink-text'> <b>GRACIAS</b> </p> </br> <p id='modal-gray-text'> <b>BIENVENIDO OFICIALMENTE</b> </p> <img style='margin-left:25%' src='./images/preregistroexito.png'/></br><p id='modal-gray-text-footer'> ¡YA ERES MIEMBRO! </p>";
+                    console.log("Prueba");
+                    $("#modal-form").css("opacity", "1");
+                }, 250);
             }
         })
 
